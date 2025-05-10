@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desa Persiapan Andamonung</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; scroll-behavior: smooth; }
+    header, footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #34495e; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav a { color: white; padding: 14px 20px; text-decoration: none; }
+    nav a:hover { background-color: #2c3e50; }
+    section { display: none; padding: 40px 20px; }
+    section.active { display: block; }
+    .gallery img { width: 100%; max-width: 300px; margin: 10px; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Desa Persiapan Andamonung</h1>
+    <p>Membangun Masa Depan yang Lebih Baik</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('beranda')">Beranda</a>
+    <a href="#" onclick="showSection('tentang')">Tentang Kami</a>
+    <a href="#" onclick="showSection('visi-misi')">Visi & Misi</a>
+    <a href="#" onclick="showSection('program')">Program</a>
+    <a href="#" onclick="showSection('galeri')">Galeri</a>
+    <a href="#" onclick="showSection('kontak')">Kontak</a>
+  </nav>
+
+  <section id="beranda" class="active">
+    <h2>Selamat Datang</h2>
+    <p>Desa Persiapan Andamonung berdedikasi untuk pembangunan dan pemberdayaan masyarakat.</p>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Desa ini pertama kali didirikan pada tahun 2018. Tujuannya adalah membantu masyarakat dalam bidang pendidikan, kesehatan, dan ekonomi.</p>
+  </section>
+
+  <section id="visi-misi">
+    <h2>Visi</h2>
+    <p>Desa yang maju, sejahtera, dan berkelanjutan melalui pembangunan berbasis potensi lokal dan partisipasi masyarakat.</p>
+    <h2>Misi</h2>
+    <ul>
+      <li>Meningkatkan kesejahteraan masyarakat.</li>
+      <li>Membangun infrastruktur desa.</li>
+      <li>Meningkatkan kualitas pendidikan dan kesehatan.</li>
+      <li>Meningkatkan partisipasi masyarakat.</li>
+    </ul>
+  </section>
+
+  <section id="program">
+    <h2>Program Kami</h2>
+    <ul>
+      <li>Beasiswa Pendidikan Anak</li>
+      <li>Pelayanan Kesehatan Gratis</li>
+      <li>Pelatihan Wirausaha Masyarakat</li>
+      <li>Program Bantuan Bencana Alam</li>
+    </ul>
+  </section>
+
+  <section id="galeri">
+    <h2>Galeri Kegiatan</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300" alt="Kegiatan 1">
+      <img src="https://via.placeholder.com/300" alt="Kegiatan 2">
+      <img src="https://via.placeholder.com/300" alt="Kegiatan 3">
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>Email: info@lipuzndamunamu@gmai.com.or.id</p>
+    <p>Telepon: 0812 3641 3143</p>
+    <p>Alamat: Desa Persiapan Andamonung, Kec. Mahu, Sumba Timur, NTT</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Desa Persiapan Andamonung. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
